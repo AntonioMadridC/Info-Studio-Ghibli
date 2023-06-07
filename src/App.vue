@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ghibli-get></ghibli-get>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import GhibliGet from './components/GhibliGet.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    GhibliGet
   }
 }
 </script>
