@@ -9,7 +9,7 @@
     </div>
     <div class="row justify-content-center" v-if="loggedIn">
       <div class="col-6 mb-5">
-        <div class="card shadow">
+        <div class="card sombra">
           <div class="card-body">
             <h1 class="card-title">Bienvenid@ {{ fullName }}</h1>
             <p class="card-text text-body-secondary">
@@ -40,7 +40,7 @@
       </select>
 
       <div class="col-6 mb-5" v-if="movieSelected">
-        <div class="card shadow">
+        <div class="card sombra">
           <img
             :src="moviePoster"
             class="card-img-top"
@@ -141,4 +141,7 @@ export default {
 </script>
 
 <style scoped>
+.sombra {
+  box-shadow: rgba(238, 90, 231, 0.24) 0px 3px 8px;
+}
 </style>
